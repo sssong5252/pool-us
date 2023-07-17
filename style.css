@@ -2,44 +2,48 @@
 .anton-font {
     font-family: 'Anton', sans-serif;
 }
-
 @font-face {
     font-family: 'GongGothicMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-.isamanroo-font{
-    font-family: 'GongGothicMedium';
+.isamanroo-font {
+    font-family: 'GongGothicMedium', sans-serif;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.sbaggro-font {
+    font-family: 'SBAggroB', sans-serif;
 }
 body {
     background-color: #0f0f0f;
 }
-
 .display-container {
     max-width: 415px;
     margin-left: auto;
     margin-right: auto;
     min-height: 100vh;
+    overflow-x: hidden;
 }
-
 .main{
     position: relative;
     min-height: 100vh;
 }
-
 .main video{
     position: absolute;
-    top: 0;
+    top:0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index:-1;
 }
- 
- .glitch {
+.glitch {
     position: relative;
     font-size: 100px;
     font-weight: 700;
@@ -47,10 +51,9 @@ body {
     color: #fff;
     letter-spacing: 6px;
     z-index: 1;
-    text-shadow: 2px 2px 5px #000
- }
- 
- .glitch:before {
+    text-shadow: 2px 2px 5px black;
+}
+.glitch:before {
     content: attr(data-glitch);
     position: absolute;
     top: 0;
@@ -247,32 +250,30 @@ body {
        clip: rect(67px, 9999px, 122px, 0);
     }
  }
-
-.subtitle {
-    text-shadow: 2px 2px 5px #000;
-  }
-
-.btn-main {
+ .sub-title {
+    text-shadow: 2px 2px 5px black;
+ }
+ .btn-main {
     position: relative;
     z-index: 1;
-    text-decoration-line:none;
+    text-decoration-line: none;
     filter: drop-shadow(0px 0px 8px #ffffff);
- }
-.btn-main-waterisland-in {
+}
+ .btn-main-waterisland-in{
     color: #6bc6dd;
-    background: #000;
+    background: #000000;
     width: 98%;
     height: 100%;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
-  }
-.btn-main-waterisland-out {
+ }
+ .btn-main-waterisland-out {
     position: absolute;
-    color: #6bc6dd;
+    background: #6bc6dd;
     width: 100%;
     height: 110%;
     z-index: -1;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
-  }
+}
 .btn-main-waterisland-in:hover {
     color: #ffffff;
     background-color: #55d6f6;
@@ -280,22 +281,25 @@ body {
     height: 100%;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
     transition: 0.3s;
-  }
-  .btn-main-romanticisland-in {
+}
+.btn-main-romanticisland-in {
     color: #c62b6b;
-    background: #000;
+    background: #000000;
     width: 98%;
     height: 100%;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
-  }
+    transition: 0.3s;
+}
+
 .btn-main-romanticisland-out {
     position: absolute;
-    color: #c62b6b;
+    background: #c62b6b;
     width: 100%;
     height: 110%;
     z-index: -1;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
-  }
+}
+
 .btn-main-romanticisland-in:hover {
     color: #ffffff;
     background-color: #e43a81;
@@ -303,24 +307,25 @@ body {
     height: 100%;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
     transition: 0.3s;
-  }
+}
 
-
-  .btn-main-gardenisland-in {
+.btn-main-gardenisland-in {
     color: #287e3a;
-    background: #000;
+    background: #000000;
     width: 98%;
     height: 100%;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
-  }
+    transition: 0.3s;
+}
 .btn-main-gardenisland-out {
     position: absolute;
-    color: #287e3a;
+    background: #287e3a;
     width: 100%;
     height: 110%;
     z-index: -1;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
-  }
+}
+
 .btn-main-gardenisland-in:hover {
     color: #ffffff;
     background-color: #29a844;
@@ -328,4 +333,119 @@ body {
     height: 100%;
     clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
     transition: 0.3s;
-  }
+}
+.wayto-water-island {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    margin-bottom: 35px;
+}
+
+.wayto-water-island p {
+    font-size: 12px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 5px;
+}
+
+.wayto-water-island img {
+    width: auto;
+    height: 40px;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+.waterisland-section {
+    background-color: #000000;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 100px;
+    z-index: 0;
+}
+
+.waterisland-section .island-title {
+    font-size: 30px;
+    color: black;
+    margin-bottom: -30px;
+    -webkit-text-stroke: 1px #6bc6dd;
+}
+
+.waterisland-section .poolus-title {
+    font-size: 100px;
+    color: #6bc6dd;
+}
+
+.waterisland-section .section-description {
+    color: #6bc6dd;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.main-waterIslandBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.main-waterIslandBtn button {
+    padding: 10px !important;
+    margin-bottom: 0 !important;
+    background-color: #6CC7DF;
+    border-radius: 10px !important;
+    border: none;
+    font-size: 20px;
+    font-family: SBAggroB;
+    width: 200px;
+    color: black;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+.waterisland-img {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+
+.wayto-romantic-island {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.wayto-romantic-island p {
+    font-size: 12px;
+    font-weight: 900;
+    color: #000000;
+    /* text-shadow: 2px 2px 5px black; */
+    margin-bottom: 5px;
+}
+
+.wayto-romantic-island img {
+    width: auto;
+    height: 40px;
+    filter: drop-shadow(2px 2px 5px #000000);
+}
+
+.waterisland-title {
+    position: relative;
+}
+
+.wave-line-1 {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 10px;
+    right: -65px;
+    z-index: -1;
+}
+
+.wave-line-2 {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    bottom: 50px;
+    left: -65px;
+    z-index: -1;
+}
